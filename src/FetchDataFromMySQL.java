@@ -2,12 +2,12 @@
 import java.sql.*;
 public class FetchDataFromMySQL{
   public static void main(String[] args) {
-      String url = "jdbc:mysql://localhost:3306/geudb";
+      String url = "jdbc:mysql://127.0.0.1:3306/geudb";
       try{
         //step 2: Load and Register JDBC Driver
         Class.forName("com.mysql.cj.jdbc.Driver");
         //Step 3: Establish a Connection
-        Connection con=DriverManager.getConnection(url, "root", "root");
+        Connection con=DriverManager.getConnection(url, "root", "@ycce2025placed");
         //Step 4: Create a Statement
         Statement stmt  = con.createStatement();
         //Step 5: Create and Execute a Query
